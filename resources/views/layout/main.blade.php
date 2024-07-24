@@ -50,7 +50,7 @@
         <div class="nav-header">
             <div class="brand-logo">
                     <span class="brand-title">
-                        @yield('logo')
+                        <img src="{{ asset('assets/theme/images/logo-bhs.png') }}" alt="">
                     </span>
                 <!-- <a href="index.html">
                     <b class="logo-abbr"><img src="images/logo.png" alt=""> </b>

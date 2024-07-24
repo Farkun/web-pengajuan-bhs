@@ -1,9 +1,5 @@
 @extends('layout.main')
 
-@section('logo')
-<img src="assets/theme/images/logo-bhs.png" alt="">
-@endsection
-
 @section('sidebar')
 <ul class="metismenu" id="menu">
     <li class="nav-label">Dashboard</li>
