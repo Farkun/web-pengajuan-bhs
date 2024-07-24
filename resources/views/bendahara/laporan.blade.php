@@ -107,6 +107,12 @@
                                     </table>
                                 </div>
                             </div>
+                            <div class="general-button" style="margin-left: 1050px">
+                                    <div class="sweetalert m-t-30">
+                                        <button type="button" class="btn mb-1 btn-success">Export Excel</button>
+                                    </div>
+                                <br><br>
+                            </div>
                         </div>
                     </div>
                 </div>
