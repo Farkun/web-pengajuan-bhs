@@ -105,9 +105,6 @@
                                     <div class="col-lg-6">
                                         <div class="card">
                                             <div class="card-body">
-                                                <div class="card-title">
-                                                    <h4>Table Hover</h4>
-                                                </div>
                                                 <div class="table-responsive">
                                                     <table class="table table-hover">
                                                         <thead>
