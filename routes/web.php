@@ -23,12 +23,20 @@ Route::get('/home', function () {
 });
 
 Route::get('/pengaju', function () {
-    return view('pengaju.index');
-});
+    return view('pengaju.dashboard');
+})->name('pengaju.dashboard');
 
-Route::get('/approval', function () {
-    return view('approval.index');
-});
+Route::get('/pengaju/dana', function () {
+    return view('pengaju.dana');
+})->name('pengaju.dana');
+
+Route::get('/pengaju/status', function () {
+    return view('pengaju.status');
+})->name('pengaju.status');
+
+Route::get('/approval/status', function () {
+    return view('approval.status');
+})->name('approval.status');
 
 Route::get('/accountant', function () {
     return view('accountant.dashboard');

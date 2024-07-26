@@ -4,13 +4,18 @@
 <ul class="metismenu" id="menu">
     <li class="nav-label">Dashboard</li>
         <li>
-            <a href="{{ route('accountant.dashboard') }}">
+            <a href="{{ route('pengaju.dashboard') }}">
                 <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
             </a>
         </li>
         <li>
-            <a href="{{ route('accountant.data') }}">
-                <i class="icon-notebook menu-icon"></i><span class="nav-text">Data Approval</span>
+            <a href="{{ route('pengaju.dana') }}">
+                <i class="icon-notebook menu-icon"></i><span class="nav-text">Ajukan Dana</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ route('pengaju.status') }}">
+                <i class="icon-notebook menu-icon"></i><span class="nav-text">Status</span>
             </a>
         </li>
 </ul>
@@ -18,6 +23,7 @@
 
 @section('content')
 <div class="container-fluid mt-3">
+    <h1>Dashboard</h1>
             <div class="row">
                     <div class="col-lg-12">
                         <div class="row">
@@ -25,7 +31,7 @@
                                 <div class="card">
                                     <div class="card-body pb-0 d-flex justify-content-between">
                                         <div>
-                                            <h2 class="mb-1">Selamat Datang, Accountant</h2>
+                                            <h2 class="mb-1">Selamat Datang, Departemen Marketing</h2>
                                             <p>Total Earnings of the Month</p>
                                             <h3 class="m-0">$ 12,555</h3>
                                         </div>
@@ -63,22 +69,47 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card gradient-2">
-                            <div class="card-body">
-                                <h3 class="card-title text-white">Total Data Approval</h3>
-                                <div class="d-inline-block">
-                                    <h2 class="text-white">$ 8541</h2>
-                                    <p class="text-white mb-0">Jan - March 2019</p>
+                <div class="container-fluid mt-3">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-stretch">
+                                                <!-- Tombol di sebelah kiri -->
+                                                <div class="me-3">
+                                                    <button class="btn w-100" style="background-color: transparent; border: 2px solid #000; padding: 35px; font-size: 1.5rem; color: #000;">
+                                                        <div class="card mb-0">
+                                                            <div class="card-body d-flex align-items-center p-0" style="padding: 40px; display: flex; align-items: center;">
+                                                                <img src="assets/theme/images/status_pengaju.png" class="img-fluid" alt="Placeholder Image" style="max-width: 200px; margin-right: 20px;">
+                                                                <div class="ml-3" style="flex-grow: 1;">
+                                                                    <h1>Status Pengaju</h1>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                                
+                
+                                                <!-- Pembatas vertikal di tengah -->
+                                                <div class="vr" style="border-left: 2px solid #000; height: auto; flex-grow: 1; margin: 0 50px;"></div>
+                
+                                                <!-- Konten lain di sebelah kanan pembatas -->
+                                                <div class="flex-grow-1 ms-3 d-flex align-items-center">
+                                                    <img src="assets/theme/images/tabelstatuspengaju.png" alt="" style="max-width: 500px; margin-left: -100px;"> <!-- Memindahkan gambar ke kanan -->
+                                                </div>
+                                            </div>
+                
+                                            
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-            <!-- #/ container -->
-        </div>
-        <!-- ansjsn -->
+                
+                
 @endsection
+
