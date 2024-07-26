@@ -34,9 +34,9 @@ Route::get('/pengaju/status', function () {
     return view('pengaju.status');
 })->name('pengaju.status');
 
-Route::get('/approval', function () {
-    return view('approval.index');
-});
+Route::get('/approval/status', function () {
+    return view('approval.status');
+})->name('approval.status');
 
 Route::get('/accountant', function () {
     return view('accountant.dashboard');
