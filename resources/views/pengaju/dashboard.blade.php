@@ -10,7 +10,7 @@
         </li>
         <li>
             <a href="{{ route('pengaju.dana') }}">
-                <i class="icon-notebook menu-icon"></i><span class="nav-text">Ajukan Dana</span>
+                <i class="icon-note menu-icon"></i><span class="nav-text">Ajukan Dana</span>
             </a>
         </li>
         <li>
@@ -83,6 +83,7 @@
                                                         <div class="card mb-0">
                                                             <div class="card-body d-flex align-items-center p-0" style="padding: 40px; display: flex; align-items: center;">
                                                                 <img src="assets/theme/images/status_pengaju.png" class="img-fluid" alt="Placeholder Image" style="max-width: 200px; margin-right: 20px;">
+                                                               
                                                                 <div class="ml-3" style="flex-grow: 1;">
                                                                     <h1>Status Pengaju</h1>
                                                                 </div>
