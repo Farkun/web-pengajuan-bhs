@@ -79,6 +79,7 @@
                                 <div class="d-flex align-items-stretch">
                                     <!-- Tombol di sebelah kiri -->
                                     <div class="me-3">
+                                        <td><a href="{{ route('pengaju.status') }}">
                                         <button class="btn w-100"
                                             style="background-color: transparent; border: 2px solid #000; padding: 35px; font-size: 1.5rem; color: #000;">
                                             <div class="card mb-0">
