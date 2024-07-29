@@ -10,7 +10,7 @@
         </li>
         <li>
             <a href="{{ route('pengaju.dana') }}">
-                <i class="icon-notebook menu-icon"></i><span class="nav-text">Ajukan Dana</span>
+                <i class="icon-note menu-icon"></i><span class="nav-text">Ajukan Dana</span>
             </a>
         </li>
         <li>
