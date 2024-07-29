@@ -34,6 +34,10 @@ Route::get('/pengaju/status', function () {
     return view('pengaju.status');
 })->name('pengaju.status');
 
+Route::get('/pengaju/result', function () {
+    return view('pengaju.result');
+})->name('pengaju.result');
+
 Route::get('/approval/status', function () {
     return view('approval.status');
 })->name('approval.status');
