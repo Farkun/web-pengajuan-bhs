@@ -38,6 +38,10 @@ Route::get('/approval/status', function () {
     return view('approval.status');
 })->name('approval.status');
 
+Route::get('/approval/permintaan', function () {
+    return view('approval.permintaan');
+})->name('approval.permintaan');
+
 Route::get('/accountant', function () {
     return view('accountant.dashboard');
 })->name('accountant.dashboard');

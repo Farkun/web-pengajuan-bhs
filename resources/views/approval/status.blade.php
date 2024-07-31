@@ -8,6 +8,10 @@
                 <i class="icon-speedometer menu-icon"></i><span class="nav-text">Status</span>
             </a>
         </li>
-        
+        <li>
+            <a href="{{ route('approval.permintaan') }}">
+                <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
+            </a>
+        </li>
 </ul>
 @endsection
