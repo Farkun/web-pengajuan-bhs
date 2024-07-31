@@ -11,13 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('bendaharas', function (Blueprint $table) {
+        Schema::create('statusdanas', function (Blueprint $table) {
             $table->id();
-            $table->date('tanggal');
-            $table->foreginId('user_id');
-            $table->string('nama_pengaju');
-            $table->text('deskripsi');
-            $table->integer('total');
             $table->string('status_dana');
             $table->timestamps();
         });

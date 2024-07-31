@@ -14,13 +14,14 @@ return new class extends Migration
         Schema::create('pengajus', function (Blueprint $table) {
             $table->id();
             $table->date('tanggal');
-            $table->foreginId('user_id');
+            $table->foreignId('user_id')->constrained('users')->cascadeOnUpdate();
             $table->string('nama_pengaju');
             $table->text('deskripsi');
             $table->integer('total');
-            $table->foreginId('id_status');
-            $table->foreginId('id_bendahara');
-            $table->foreginId('id_keterangan');
+            $table->foreignId('id_status')->constrained('statuses')->cascadeOnDelete();
+            $table->foreignId('id_statusdana')->constrained('statusdanas')->cascadeOnDelete();
+            $table->foreignId('id_keterangan')->constrained('keterangans')->cascadeOnDelete();
+            $table->timestamp('forwarded_at')->nullable();
             $table->timestamps();
         });
     }
