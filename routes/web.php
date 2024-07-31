@@ -34,13 +34,13 @@ Route::get('/pengaju/status', function () {
     return view('pengaju.status');
 })->name('pengaju.status');
 
-Route::get('/approval/status', function () {
+Route::get('/pengaju/result', function () {
+    return view('pengaju.result');
+})->name('pengaju.result');
+
+Route::get('/approval', function () {
     return view('approval.status');
 })->name('approval.status');
-
-Route::get('/approval/permintaan', function () {
-    return view('approval.permintaan');
-})->name('approval.permintaan');
 
 Route::get('/accountant', function () {
     return view('accountant.dashboard');

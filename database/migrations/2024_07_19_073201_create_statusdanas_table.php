@@ -11,8 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('superadmins', function (Blueprint $table) {
+        Schema::create('statusdanas', function (Blueprint $table) {
             $table->id();
+            $table->string('status_dana');
             $table->timestamps();
         });
     }
@@ -22,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('superadmins');
+        Schema::dropIfExists('bendaharas');
     }
 };

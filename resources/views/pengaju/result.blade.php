@@ -47,50 +47,50 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
-                        <div class="form-validation">
-                            <form class="form-valide" action="#" method="post" onsubmit="event.preventDefault(); showNotificationModal();">
-                                <div class="form-group row">
-                                    <label class="col-lg-4 col-form-label" for="val-date">Masukan tanggal pengajuan <span class="text-danger">*</span></label>
-                                    <div class="col-lg-6">
-                                        <input type="date" class="form-control" id="val-date" name="val-date">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-lg-4 col-form-label" for="val-username">Masukan nama pengaju <span class="text-danger">*</span>
-                                    </label>
-                                    <div class="col-lg-6">
-                                        <input type="text" class="form-control" id="val-username" name="val-username" placeholder="Tuliskan nama">
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group row">
-                                    <label class="col-lg-4 col-form-label" for="val-suggestions">Deskripsi <span class="text-danger">*</span>
-                                    </label>
-                                    <div class="col-lg-6">
-                                        <textarea class="form-control" id="val-suggestions" name="val-suggestions" rows="5" placeholder="Tuliskan deskripsi"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-lg-4 col-form-label" for="val-currency">Dana pengajuan <span class="text-danger">*</span>
-                                    </label>
-                                    <div class="col-lg-6">
-                                        <input type="text" class="form-control" id="val-currency" name="val-currency" placeholder="Rp1.600.000">
-                                    </div>
-                                </div>
-                               
-                                <div class="form-group row" style="max-width: 500px; margin-left: auto;">
-                                    <div class="col-lg-8 ml-auto">
-                                        <button type="submit" class="btn btn-primary" id="submitButton">Tambah pengajuan</button>
-                                    </div>
-                                </div>
-                            </form>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Tanggal</th>
+                                        <th>Nama Departemen</th>
+                                        <th>Nama pengaju</th>
+                                        <th>Keterangan</th>
+                                        <th>Dana pengajuan</th>
+                                        <th>Persetujuan</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>2024-01-22</td>
+                                        <td> Akuntasi </td>
+                                        <td>M. Budiman</td>
+                                        <td>Lorem ipsum dolor sit amet....</td>
+                                        <td class="color-primary">Rp2.000.000</td>
+                                        
+                                        <td><span class="badge badge-secondary px-2">Belum dibaca</span></td>
+                                        
+                                        
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="form-group row" style="max-width: 500px; margin-left: auto;">
+                            <div class="col-lg-8 ml-auto">
+                                <td><a href="{{ route('pengaju.dana') }}"><button type="button" class="btn mb-1 btn-info">kembali</button></a></td>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
 <div class="modal fade" id="notificationModal" tabindex="-1" role="dialog" aria-labelledby="notificationModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
