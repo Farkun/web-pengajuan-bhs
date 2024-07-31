@@ -42,6 +42,18 @@ Route::get('/approval', function () {
     return view('approval.status');
 })->name('approval.status');
 
+Route::get('/approval/detailstat', function () {
+    return view('approval.detailstat');
+})->name('approval.detailstat');
+
+Route::get('/approval/laporan', function () {
+    return view('approval.laporan');
+})->name('approval.laporan');
+
+Route::get('/approval/detaillap', function () {
+    return view('approval.detaillap');
+})->name('approval.detaillap');
+
 Route::get('/accountant', function () {
     return view('accountant.dashboard');
 })->name('accountant.dashboard');

@@ -8,13 +8,18 @@
                 <i class="icon-speedometer menu-icon"></i><span class="nav-text">Status</span>
             </a>
         </li>
+        <li>
+        <a href="{{ route('approval.laporan') }}">
+            <i class="icon-note menu-icon"></i><span class="nav-text">Laporan</span>
+        </a>
+    </li>
         
 </ul>
 @endsection
 
 @section('content')
 <div class="container-fluid mt-3">
-    <h1>Status</h1>
+    <h1>Permintaan Persetujuan</h1>
             <div class="row">
                     <div class="col-lg-12">
                         <div class="row">
@@ -22,13 +27,9 @@
                                 <div class="card">
                                     <div class="card-body pb-0 d-flex justify-content-between">
                                         <div>
-                                            <h3 class="mb-1">Informasi</h3>
                                             <h5>Berikut ini daftar surat pengajuan yang perlu Anda tanda tangani. Anda harus melakukan persetujuan untuk dapat menyetujui surat pengajuan. </h5>
-                                        </div>
-                                        
+                                        </div>  
                                     </div>
-                                    
-                                    
                                 </div>
                             </div>
                         </div>
