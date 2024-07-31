@@ -79,30 +79,30 @@
                                 <div class="d-flex align-items-stretch">
                                     <!-- Tombol di sebelah kiri -->
                                     <div class="me-3">
-                                        <td><a href="{{ route('pengaju.status') }}">
-                                        <button class="btn w-100"
-                                            style="background-color: transparent; border: 2px solid #000; padding: 35px; font-size: 1.5rem; color: #000;">
-                                            <div class="card mb-0">
-                                                <div class="card-body d-flex align-items-center p-0"
-                                                    style="padding: 40px; display: flex; align-items: center;">
-                                                    <img src="assets/theme/images/status_pengaju.png" class="img-fluid"
-                                                        alt="Placeholder Image"
-                                                        style="max-width: 200px; margin-right: 20px;">
-                                                    <div class="ml-3" style="flex-grow: 1;">
-                                                        <h1>Status Pengaju</h1>
+                                        <a href="{{ route('pengaju.status') }}">
+                                            <button class="btn w-100"
+                                                style="background-color: transparent; border: 2px solid #000; padding: 35px; font-size: 1.5rem; color: #000;">
+                                                <div class="card mb-0">
+                                                    <div class="card-body d-flex align-items-center p-0"
+                                                        style="padding: 40px; display: flex; align-items: center;">
+                                                        <img src="assets/theme/images/status_pengaju.png" class="img-fluid"
+                                                            alt="Placeholder Image"
+                                                            style="max-width: 200px; margin-right: 20px;">
+                                                        <div class="ml-3" style="flex-grow: 1;">
+                                                            <h1>Status Pengaju</h1>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </button>
+                                            </button>
+                                        </a>
                                     </div>
-
-
+    
                                     <!-- Pembatas vertikal di tengah -->
                                     <div class="vr"
-                                        style="border-left: 2px solid #000; height: auto; flex-grow: 1; margin: 0 50px;">
+                                        style="border-left: 2px solid #000; height: 175px; flex-grow: 1; margin: 0 50px;">
                                     </div>
-
-                                    <!-- Konten lain di sebelah kanan pembatas -->
+    
+                                    <!-- Tabel di sebelah kanan pembatas -->
                                     <div class="col-lg-6">
                                         <div class="table-responsive">
                                             <table class="table table-hover">
@@ -119,7 +119,7 @@
                                                         <th>1</th>
                                                         <td>00/00/0000</td>
                                                         <td>Rp.200.000</td>
-                                                        <td><span class="badge badge-warning px-2">Pendding</span>
+                                                        <td><span class="badge badge-warning px-2">Pending</span>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -140,18 +140,17 @@
                                             </table>
                                         </div>
                                     </div>
-
+    
                                 </div>
                             </div>
                             <!-- /# card -->
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
+    
 </div>
 </div>
 </div>
